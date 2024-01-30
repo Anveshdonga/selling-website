@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars/Bikes Signup</title>
+    <style>
+        .login{
+         
+         border: 1px solid white;
+         height:350px ;
+         width: 450px;
+         padding: 50px;
+         margin: auto;
+        
+        }
+        .md{
+            border: 1px solid black;
+            width: 350px;
+            height: 470px;
+            padding: 50px;
+            border-radius: 30px;
+         background-color:lightblue;
+        }
+        input{
+            border: 1px solid black;
+            width: 350px;
+            height: 40px;
+            border-radius: 40px;
+            font-size: 15px;
+        }
+        button{
+            border: 1px solid black;
+            height: 35px;
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 18px;
+            background-color: rgb(32, 81, 255);
+            color: white;
+        }
+        button:hover{
+            background-color: white;
+            color:rgb(0, 55, 255) ;
+        }
+        button:active{
+            background-color: rgb(144, 154, 201);
+        }
+        .b1{
+            height: 35px;
+            width: 250px;
+            height: 40px;
+        }
+            </style>
+</head>
+<body>
+   <div class="login">
+    <div class="md">
+    <form action="./loginn11.html" >
+       
+        <input type="text" id="Fname" name="Fname" required placeholder="Firstname"><br><br>
+        
+        <input type="text" id="Sname" name="Sname" required placeholder="Secondname"><br><br>
+        
+        <input type="email" id="mail" name="mail" required placeholder="Email"><br><br>
+      
+        <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{10}" required placeholder="Phonenumber"><br><br>
+       
+        <input type="password" id="pswd" name="pswd" required placeholder="Password"><br><br>
+      
+        <input type="password" id="pswd" name="pswd" required placeholder="Conformpassword"><br><br>
+        <button type="submit" >submit</button>
+        <button type="reset">reset</button>
+    </form><br>
+    <a  href="./loginn11.html"><button class="b1">Already have an account</button></a>
+   </div>
+   </div>
+
+</body>
+</html>

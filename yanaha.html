@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+      @media screen and (min-width:320px) and (max-width:375px) {
+        .cards{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 20px;
+  margin-left: 17px;
+}
+      }
+      @media screen and (min-width:374px) and (max-width:425px) {
+        .cards{
+         display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 20px;
+  margin-left: 30px;
+}
+      }
+        .main{
+          display: flex;
+          flex-direction: column;
+            position: sticky;
+            z-index: 1px;
+            top: -500px;
+            width: 10px;
+            height: 10px;
+        }
+        li{
+       list-style: none;
+        }
+        .btn1{
+            border: 1px solid rgb(49, 155, 190);
+            height: 50px;
+            width: 100px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            font-size: 20px;
+            background-color: rgb(49, 155, 190); 
+            color: white;
+             border-radius: 40px;
+        }
+        .btn1:hover{
+            background-color: white;
+            color:rgb(49, 155, 190) ;
+        }
+        .btn2{
+            border: 1px solid;
+            height: 50px;
+            width: 100px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            font-size: 20px;
+            background-color:white; 
+            color: rgb(49, 155, 190); 
+            border-radius: 40px;  
+          }
+        .btns{
+          display: flex;
+          gap: 10px;
+          
+        }
+        .btn2:hover{
+            background-color:rgb(49, 155, 190);
+            color: white ;
+        }
+      
+      
+          .p1:hover, .p2:hover ,.p3:hover ,.p4:hover ,.p5:hover, .p6:hover{
+            background-color: rgb(27, 24, 202);
+            color: white;
+            border-radius: 10px;
+          }
+         
+          body{
+            background-color: rgb(255, 255, 255);
+          }
+            .p1, .p2, .p3, .p4, .p5, .p6{
+            font-size:25px;
+            margin-top: -1px;
+            margin-left: -5px;
+            height: 35px;
+            width: 110px;
+            text-align: center;
+          }
+        a{
+        text-decoration: none;   
+        color: rgb(0, 47, 255);  
+        }
+        a:active{
+          color: rgb(148, 8, 8);
+        }
+        .image{
+ height: 100px;
+ width: 100px;
+ }
+ #imggs{
+  height: 300px;
+ width: 300px;
+ }
+.bl1{
+  border: 1px solid black;
+  height: 670px;
+ width: 301px;
+}
+.cards{
+  display: flex;
+  gap: 20px;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+table{
+    border: 1px solid black;
+     height: 280px;
+      width: 300px; 
+      font-size: 15px;
+       background-color: rgb(237, 232, 232);  
+        color: rgb(0, 0, 0);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .bd{
+          margin-left: 100px;
+          background-color:rgb(254, 237, 216) ;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          width: 100px;
+          border-radius: 5px;
+          font-size: 18px;
+        }
+        .by1{
+         height: 40px; 
+         width: 100px;
+         margin-top: 10px;
+         margin-left:5px;
+         border-radius: 30px;
+         border: 1px solid black;
+         font-size: 20px;
+         background-color: rgb(242, 255, 0);
+        }
+        .by2{
+         height: 40px; 
+         width: 100px;
+         margin-left: 80px;
+         border-radius: 30px;
+         border: 1px solid black;
+         font-size: 17px;
+         background-color: rgb(242, 255, 0);
+        }
+        .by1:hover ,.by2:hover{
+          background-color: rgb(233, 228, 101);
+          color: rgb(0, 0, 0);
+        }
+
+</style>
+</head>
+<body>
+    <div class="main">
+      <div class="btns">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bikes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a href="./loginn11.html"><button class="btn1">Login</button></a>
+                  <a href="./signuup11.html"><button class="btn2">Sign up</button></a>
+                  <li><a href="./tvs.html"><img src="./tvs.webp" alt="Bike" class="image"><br><p class="p1">Tvs</p></a></li>
+        <li><a href="./kawasaki.html"><img src="./kawasaki.webp" alt="Bike" class="image"><p class="p2">kawasaki</p></a></li>
+        <li><a href="./hero.html"><img src="./hero.webp" alt="Bike" class="image"><p class="p3">Hero</p></a></li>
+        <li><a href="./yanaha.html"><img src="./yamaha.webp" alt="Bike" class="image"><p class="p4">Yamaha</p></a></li>
+        <li><a href="./ktm.html"><img src=".//ktm.webp" alt="Bike" class="image"><p class="p5">Ktm</p></a></li>
+        <li><a href="./honda.html"><img src="./honda.webp" alt="Bike" class="image"><p class="p6">Honda</p></a></li>
+        </li>
+</div>
+</div>
+</div>
+</nav>
+<div class="cards">
+<div class="bl1">
+  <div class="b1">
+    <img src="./mt-15-2-062e4b1bb4ffad.webp" id="imggs">
+   <div class="bd">Bike details</div>
+
+    <table>
+      <tr>
+        <td class="t1">Price</td>
+        <td class="t1">1.67 - 1.73 Lakh </td>
+    </tr>
+    <tr>
+        <td class="t1">Company</td>
+        <td class="t1">Yamaha </td>
+    </tr>
+  <tr>
+    <td class="t1">Name:</td>
+    <td class="t1">Yamaha MT 15</td>
+  </tr>
+  <tr>
+    <td class="t1">Engine</td>
+    <td class="t1">155 cc</td>
+  </tr> 
+  <tr>
+    <td class="t1">Power</td>
+    <td class="t1">18.4 PS</td>
+  </tr> 
+  <tr>
+    <td class="t1">Torque</td>
+    <td class="t1">14.1 Nm</td>
+  </tr> 
+  <tr>
+    <td class="t1">Mileage</td>
+    <td class="t1">56.87 kmpl</td>
+  </tr>
+  <tr>
+    <td class="t1">Kerb Weight</td>
+    <td class="t1">139 kg
+  </td>
+  </tr>
+  </table>
+  <button class="by1" >Buy now</button>
+  <button class="by2" >Read more</button>
+  </div>
+</div> 
+
+<div class="bl1"> 
+  <img src="./r15-v4616fa9ac63d6c.webp" id="imggs">
+  <div class="bd">Bike details</div>
+  <table>
+    <tr>
+      <td class="t1">Price</td>
+      <td class="t1">1.82 - 1.97 Lakh</td>
+  </tr>
+  <tr>
+      <td class="t1">Company</td>
+      <td class="t1">Yamaha </td>
+  </tr>
+<tr>
+  <td class="t1">Name:</td>
+  <td class="t1">Yamaha R15 V4</td>
+</tr>
+<tr>
+  <td class="t1">Engine</td>
+  <td class="t1">155 cc<td>
+</tr> 
+<tr>
+  <td class="t1">Power</td>
+  <td class="t1">18.4 PS</td>
+</tr> 
+<tr>
+  <td class="t1">Torque</td>
+  <td class="t1">14.2 Nm</td>
+</tr> 
+<tr>
+  <td class="t1">Mileage</td>
+  <td class="t1">	55.20 kmpl/td>
+</tr>
+<tr>
+  <td class="t1">Kerb Weigh</td>
+  <td class="t1">142 kg</td>
+</tr>
+<tr>
+  <td class="t1">Brakes</td>
+  <td class="t1">Double Disc</td>
+</tr>
+  </table>
+  <button class="by1" >Buy now</button>
+  <button class="by2" >Read more</button>
+  </div>
+<div class="bl1">
+  
+    <img src="./fzs-fi-v3-bs664e054df9e8f2.webp" id="imggs">
+      <div class="bd">Bike details</div>
+    <table>
+      <tr>
+        <td class="t1">Price</td>
+        <td class="t1">1.21 - 1.22 Lakh </td>
+    </tr>
+    <tr>
+        <td class="t1">Company</td>
+        <td class="t1">Yamaha </td>
+    </tr>
+  <tr>
+    <td class="t1">Name:</td>
+    <td class="t1">Yamaha FZS-FI V3</td>
+  </tr>
+  <tr>
+    <td class="t1">Engine</td>
+    <td class="t1">149 cc </td>
+  </tr> 
+  <tr>
+    <td class="t1">Power</td>
+    <td class="t1">12.4 PS
+  </td>
+  </tr> 
+  <tr>
+    <td class="t1">Torque</td>
+    <td class="t1">13.3 Nm
+  </td>
+  </tr> 
+  <tr>
+    <td class="t1">Mileage</td>
+    <td class="t1">	49.31 kmpl</td>
+  </tr>
+  <tr>
+    <td class="t1">Kerb Weight</td>
+    <td class="t1">135 kg</td>
+  </tr>
+  <tr>
+    <td class="t1">Brakes</td>
+    <td class="t1">Double Disc</td>
+  </tr>
+    </table>
+    <button class="by1"  >Buy now</button>
+    <button class="by2"  >Read more</button>
+  </div>
+  <div class="bl1">
+    <img src="./r760a4a8804c0f6.webp" id="imggs">
+    <div class="bd">Bike details</div>
+    <table>
+      <tr>
+        <td class="t1">Price</td>
+        <td class="t1">10 Lakh</td>
+    </tr>
+    <tr>
+        <td class="t1">Company</td>
+        <td class="t1">Yamaha</td>
+    </tr>
+  <tr>
+    <td class="t1">Name:</td>
+    <td class="t1">Yamaha R7</td>
+  </tr>
+  <tr>
+    <td class="t1">Engine</td>
+    <td class="t1">689 cc</td>
+  </tr> 
+  <tr>
+    <td class="t1">Power</td>
+    <td class="t1">73.4 PS</td>
+  </tr> 
+  <tr>
+    <td class="t1">Torque</td>
+    <td class="t1">67 Nm</td>
+  </tr> 
+  <tr>
+    <td class="t1">Mileage</td>
+    <td class="t1">24.0 kmpl</td>
+  </tr>
+  <tr>
+    <td class="t1">Kerb Weight</td>
+    <td class="t1">188 kg</td>
+  </tr>
+  <tr>
+    <td class="t1">Brakes</td>
+    <td class="t1"> Double Disc</td>
+  </tr>
+    </table>
+    <button class="by1"  >Buy now</button>
+    <button class="by2"  >Read more</button>
+  </div> 
+</div>
+</body>
+</html> 
